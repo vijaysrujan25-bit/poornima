@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Poornima Portfolio</title>
+  <meta name="description" content="Poornima's educational background and timeline.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: var(--bg-glass);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+      border-radius: 4px;
+    }
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: var(--bg-primary);
+      border: 4px solid var(--accent-primary);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+      box-shadow: 0 0 10px var(--accent-primary);
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid var(--bg-glass);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent var(--bg-glass);
+    }
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid var(--bg-glass);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--bg-glass) transparent transparent;
+    }
+    .right::after {
+      left: -10px;
+    }
+    .timeline-content {
+      padding: 20px 30px;
+      background-color: var(--bg-glass);
+      position: relative;
+      border-radius: var(--border-radius-md);
+      border: var(--glass-border);
+    }
+    .date {
+      color: var(--accent-primary);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    @media screen and (max-width: 768px) {
+      .timeline::after { left: 31px; }
+      .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+      .timeline-item::before { left: 60px; border: medium solid var(--bg-glass); border-width: 10px 10px 10px 0; border-color: transparent var(--bg-glass) transparent transparent; }
+      .left::after, .right::after { left: 21px; }
+      .right { left: 0%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Poornima<span class="text-gradient">.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="education" style="margin-top: var(--nav-height); min-height: calc(100vh - var(--nav-height)); align-items: flex-start; padding-top: 50px;">
+    <div class="container fade-in">
+      <h2 style="text-align: center; width: 100%; margin-bottom: 4rem;">My <span class="text-gradient">Education</span></h2>
+      
+      <div class="timeline">
+        
+        <div class="timeline-item left fade-in">
+          <div class="timeline-content">
+            <p class="date">2020 - 2024</p>
+            <h3>Bachelor of Technology</h3>
+            <h4 style="color: var(--text-secondary); font-weight: 500;">Computer Science and Engineering</h4>
+            <p style="margin-top: 10px; margin-bottom: 0;">University Name</p>
+            <p style="font-size: 0.9rem;">Graduated with honors. Specialized in software development and artificial intelligence.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right fade-in" style="transition-delay: 0.2s;">
+          <div class="timeline-content">
+            <p class="date">2018 - 2020</p>
+            <h3>Higher Secondary Education</h3>
+            <h4 style="color: var(--text-secondary); font-weight: 500;">Science Major</h4>
+            <p style="margin-top: 10px; margin-bottom: 0;">High School Name</p>
+            <p style="font-size: 0.9rem;">Achieved excellence in Mathematics and Physics.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

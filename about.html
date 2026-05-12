@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Poornima Portfolio</title>
+  <meta name="description" content="Learn more about Poornima and my skills.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Poornima<span class="text-gradient">.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="about" style="margin-top: var(--nav-height); min-height: calc(100vh - var(--nav-height)); align-items: flex-start; padding-top: 50px;">
+    <div class="container fade-in">
+      <h2>About <span class="text-gradient">Me</span></h2>
+      
+      <div class="glass-card" style="margin-bottom: 3rem;">
+        <h3 style="color: var(--accent-primary);">My Journey</h3>
+        <p>I am a passionate professional dedicated to crafting visually stunning and highly functional digital experiences. With a strong background in development and design, I blend logic with aesthetics to deliver solutions that not only look great but solve real-world problems.</p>
+        <p>Throughout my career, I've had the opportunity to work on diverse projects that have shaped my technical proficiency and honed my attention to detail. I am constantly learning new technologies and keeping up with modern design trends to ensure my work remains cutting-edge.</p>
+        <a href="assets/resume.pdf" class="btn btn-primary" download style="margin-top: 1rem;">Download Resume</a>
+      </div>
+
+      <h3 style="margin-bottom: 2rem;">Technical <span class="text-gradient">Skills</span></h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        
+        <div class="glass-card fade-in">
+          <h4 style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; margin-bottom: 15px;">Frontend</h4>
+          <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+            <li><span style="color: var(--accent-primary);">▹</span> HTML5 & CSS3</li>
+            <li><span style="color: var(--accent-primary);">▹</span> JavaScript (ES6+)</li>
+            <li><span style="color: var(--accent-primary);">▹</span> React / Next.js</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="glass-card fade-in" style="transition-delay: 0.1s;">
+          <h4 style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; margin-bottom: 15px;">Backend</h4>
+          <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+            <li><span style="color: var(--accent-primary);">▹</span> Node.js & Express</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Python</li>
+            <li><span style="color: var(--accent-primary);">▹</span> RESTful APIs</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Databases (SQL/NoSQL)</li>
+          </ul>
+        </div>
+
+        <div class="glass-card fade-in" style="transition-delay: 0.2s;">
+          <h4 style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; margin-bottom: 15px;">Tools & Design</h4>
+          <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+            <li><span style="color: var(--accent-primary);">▹</span> Git & GitHub</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Figma / UI/UX Design</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Responsive Design</li>
+            <li><span style="color: var(--accent-primary);">▹</span> Performance Optimization</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
